@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #af67e9;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.hero {
+  margin: 0 1em;
+  padding: 2em 2em;
+  border-radius: 2em;
+  background: #fff;
+  padding-top: 9em;
+}
+
+.hero .faq_title {
+  text-align: center;
+}
+
+.img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 144px;
+}
+
+.img .img1 {
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  height: 187px;
+}
+
+.img .img2 {
+  position: absolute;
+  top: 100px;
+  left: 26px;
+  z-index: 0;
+  width: 317px;
+}
+
+.questions_answers {
+  padding: 1em 0;
+}
+
+.questions_answers .question {
+  padding: 1em 0;
+}
+
+.questions_answers .question p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.answer {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
