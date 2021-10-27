@@ -5,16 +5,26 @@
 }
 
 body {
-  background: #af67e9;
+  background: -webkit-gradient(linear, left top, right top, from(#ee6352), to(#d16e8d));
+  background: linear-gradient(90deg, #ee6352, #d16e8d);
   font-family: "Kumbh Sans", sans-serif;
 }
 
-.hero {
+.main {
+  background: #fff;
   margin: 0 1em;
   padding: 2em 2em;
   border-radius: 2em;
-  background: #fff;
   padding-top: 9em;
+  -webkit-box-shadow: 0px 0px 50px 2px rgba(100, 93, 93, 0.5);
+          box-shadow: 0px 0px 50px 2px rgba(100, 93, 93, 0.5);
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
 }
 
 .hero .faq_title {
@@ -44,17 +54,13 @@ body {
 .img .img2 {
   position: absolute;
   top: 100px;
-  left: 26px;
   z-index: 0;
   width: 317px;
 }
 
-.questions_answers {
-  padding: 1em 0;
-}
-
 .questions_answers .question {
   padding: 1em 0;
+  border-bottom: 1px solid darkgray;
 }
 
 .questions_answers .question p {
@@ -69,7 +75,75 @@ body {
           justify-content: space-between;
 }
 
+.questions_answers .question p:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background-image: linear-gradient(90deg, red, blue);
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+.questions_answers .question .question-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.questions_answers .answer p {
+  padding-top: 1em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 10vmin;
+  padding-bottom: 1em;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
 .answer {
   display: none;
+}
+
+@media only screen and (min-width: 750px) {
+  .hero {
+    -ms-grid-columns: (0fr)[2];
+        grid-template-columns: repeat(2, 0fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero .main {
+    padding: 3em 3em;
+    border-radius: 2em;
+    width: 47vw;
+    margin: 4em 2em;
+    padding-left: 16em;
+    text-align: center;
+  }
+  .img .img1 {
+    position: absolute;
+    z-index: 1;
+    top: 9rem;
+    height: 246px;
+    right: 65%;
+  }
+  .img .img2 {
+    right: 65%;
+    top: 19rem;
+    width: 351px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .img .img1 {
+    right: 69%;
+  }
+  .img .img2 {
+    right: 69%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
