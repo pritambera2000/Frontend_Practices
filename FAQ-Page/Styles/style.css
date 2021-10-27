@@ -60,7 +60,7 @@ body {
 
 .questions_answers .question {
   padding: 1em 0;
-  border-bottom: 1px solid darkgray;
+  border-bottom: 1px solid #979595;
 }
 
 .questions_answers .question p {
@@ -91,6 +91,9 @@ body {
 
 .questions_answers .answer p {
   padding-top: 1em;
+  color: #f47c57;
+  border-bottom: 1px solid #979595;
+  padding-bottom: 0.5em;
 }
 
 .attribution {
@@ -101,7 +104,37 @@ body {
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: #f3fd6d;
+}
+
+.attribution .pritam {
+  font-size: 0.9rem;
+}
+
+.attribution .pritam span {
+  font-size: 1.3rem;
+}
+
+.attribution .pritam:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 700;
+  color: #fff;
+}
+
+.show_answer .answer {
+  display: block;
+}
+
+.show_answer .question-btn {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.show_answer .question p {
+  font-weight: 700;
 }
 
 .answer {
@@ -124,16 +157,27 @@ body {
     padding-left: 16em;
     text-align: center;
   }
+  .hero .main .answer p {
+    text-align: left;
+    font-size: 1em;
+  }
+  .questions_answers .question {
+    font-size: 1.3em;
+  }
+  .questions_answers .question .question-btn img {
+    height: 0.8em;
+    width: 1.2em;
+  }
   .img .img1 {
     position: absolute;
     z-index: 1;
-    top: 9rem;
+    top: 12rem;
     height: 246px;
     right: 65%;
   }
   .img .img2 {
     right: 65%;
-    top: 19rem;
+    top: 21rem;
     width: 351px;
   }
 }
