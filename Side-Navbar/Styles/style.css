@@ -1,0 +1,213 @@
+/* == Custom-Font from Google Fonts ==  */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
+/* == Custom Properties ==*/
+/* == CSS Reset == */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* == Body Styling == */
+body {
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  background: #e5f0f0;
+}
+
+/* == Hero Section == */
+.hero {
+  margin-left: 4rem;
+  padding: 1em;
+}
+
+.hero h2 {
+  text-align: center;
+}
+
+.hero p {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align-last: center;
+  padding: 1rem;
+}
+
+/* Navbar Styling */
+.nav {
+  background: #292d28;
+  color: #b6b6b6;
+  position: fixed;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+  font-size: 1.3rem;
+}
+
+.nav-logo {
+  width: 100%;
+  font-size: 1.7rem;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  background: #000000;
+  text-transform: uppercase;
+}
+
+.nav-logo .nav-logo-icon {
+  margin: 0 1.5rem;
+  font-size: 2rem;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.nav-ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  color: #b6b6b6;
+  opacity: 0.7;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.nav-link:hover {
+  background: #000000;
+  color: #51f21c;
+  opacity: 1;
+}
+
+.nav-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-icon {
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer p a {
+  text-decoration: none;
+}
+
+footer p a:hover {
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  font-size: 17px;
+  color: #51f21c;
+}
+
+footer p span {
+  font-size: 1.3rem;
+}
+
+/* == Small Screens ==*/
+@media only screen and (max-width: 600px) {
+  .nav {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+  .nav-logo {
+    display: none;
+  }
+  .nav-ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .nav-link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav-link .nav-icon {
+    font-size: 1.3rem;
+  }
+  .hero {
+    margin-left: 0;
+    margin-bottom: 5rem;
+  }
+}
+
+/* == Large Screen == */
+@media only screen and (min-width: 600px) {
+  .nav {
+    height: 100vh;
+    width: 4rem;
+    top: 0;
+  }
+  .nav:hover {
+    width: 13rem;
+  }
+  .nav:hover .nav-text {
+    display: block;
+  }
+  .nav:hover .nav-link {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nav:hover .nav-logo-icon {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  .nav-link:hover .nav-icon {
+    -webkit-transition: 0.99s ease-in-out;
+    transition: 0.99s ease-in-out;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  .nav-link:hover .nav-text {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+}
+/*# sourceMappingURL=style.css.map */
