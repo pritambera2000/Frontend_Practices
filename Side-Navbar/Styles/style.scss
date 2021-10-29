@@ -1,0 +1,191 @@
+/* == Custom-Font from Google Fonts ==  */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
+/* == Custom Properties ==*/
+//Fonts
+$fnt-fam: "Fira Code", monospace;
+$fnt-size: 16px;
+$font-size-hover: 17px;
+$fnt-size-nav: 1.3rem;
+$icon-size: 1.3rem;
+$icon-size-hover: 1.4rem;
+$fnt-primary-clr: #b6b6b6;
+//Colors
+$primary-clr: #e5f0f0;
+$secondary-clr: #292d28;
+$deepblack-clr: #000000;
+$icon-clr: #51f21c;
+//Transition
+$trns-speed: 0.5s;
+
+/* == CSS Reset == */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* == Body Styling == */
+body {
+  font-family: $fnt-fam;
+  font-size: $fnt-size;
+  background: $primary-clr;
+}
+/* == Hero Section == */
+.hero {
+  margin-left: 4rem;
+  padding: 1em;
+  h2 {
+    text-align: center;
+  }
+  p {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align-last: center;
+    padding: 1rem;
+  }
+}
+
+/* Navbar Styling */
+.nav {
+  background: $secondary-clr;
+  color: $fnt-primary-clr;
+  position: fixed;
+  transition: width $trns-speed ease;
+  font-size: $fnt-size-nav;
+
+  &-logo {
+    width: 100%;
+    font-size: 1.7rem;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    background: $deepblack-clr;
+    text-transform: uppercase;
+
+    .nav-logo-icon {
+      margin: 0 1.5rem;
+      font-size: 2rem;
+      transform: rotate(0deg);
+      transition: transform $trns-speed;
+    }
+  }
+
+  &-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  &-item {
+    width: 100%;
+    &:last-child {
+      margin-top: auto;
+    }
+  }
+  &-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 5rem;
+    color: $fnt-primary-clr;
+    // filter:grayscale(100%) opacity(0.7);
+    opacity: 0.7;
+    transition: $trns-speed ease;
+
+    &:hover {
+      // filter: grayscale(0%) opacity(1);
+      background: $deepblack-clr;
+      color: $icon-clr;
+      opacity: 1;
+    }
+  }
+  &-text {
+    display: none;
+    margin-left: 1rem;
+  }
+  &-icon {
+    font-size: $icon-size;
+    margin: 0 1rem;
+  }
+}
+footer {
+  p {
+    text-align: center;
+    a {
+      text-decoration: none;
+      &:hover {
+        transition: $trns-speed ease-out;
+        font-size: $font-size-hover;
+        color: $icon-clr;
+      }
+    }
+    span {
+      font-size: $icon-size;
+    }
+  }
+}
+
+/* == Small Screens ==*/
+@media only screen and (max-width: 600px) {
+  .nav {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+    &-logo {
+      display: none;
+    }
+    &-ul {
+      flex-direction: row;
+      width: 100%;
+    }
+    &-link {
+      justify-content: center;
+      .nav-icon {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .hero {
+    margin-left: 0;
+    margin-bottom: 5rem;
+  }
+}
+/* == Large Screen == */
+@media only screen and (min-width: 600px) {
+  .nav {
+    height: 100vh;
+    width: 4rem;
+    top: 0;
+
+    &:hover {
+      width: 13rem;
+      .nav-text {
+        display: block;
+      }
+      .nav-link {
+        flex-direction: row;
+      }
+      .nav-logo-icon {
+        transform: rotate(-180deg);
+        transition: transform $trns-speed;
+      }
+    }
+
+    &-link {
+      &:hover {
+        .nav-icon {
+          transition: 0.99s ease-in-out;
+          transform: rotate(20deg);
+          // font-size: $icon-size-hover;
+        }
+        .nav-text {
+          transition: 0.3s ease-in-out;
+          // font-size:$font-size-hover;
+        }
+      }
+    }
+  }
+}
