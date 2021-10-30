@@ -76,10 +76,6 @@ body {
 }
 
 .questions_answers .question p:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
-  background-image: linear-gradient(90deg, red, blue);
-  background-clip: text;
-  color: transparent;
   cursor: pointer;
 }
 
@@ -163,6 +159,13 @@ body {
   }
   .questions_answers .question {
     font-size: 1.3em;
+  }
+  .questions_answers .question p:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+    background-image: linear-gradient(90deg, red, blue);
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
   }
   .questions_answers .question .question-btn img {
     height: 0.8em;
