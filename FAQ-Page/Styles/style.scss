@@ -61,11 +61,10 @@ body {
       align-items: center;
       justify-content: space-between;
       &:hover {
-        background-image: linear-gradient(90deg, red, blue);
-        background-clip: text;
-        color: transparent;
+        
         cursor: pointer;
       }
+  
     }
     .question-btn {
       background: transparent;
@@ -145,6 +144,14 @@ body {
 .questions_answers{
   .question{
     font-size:1.3em;
+    p{
+      &:hover {
+        background-image: linear-gradient(90deg, red, blue);
+        background-clip: text;
+        color: transparent;
+        cursor: pointer;
+      }
+    }
     .question-btn{
       img{
         height:0.8em;
