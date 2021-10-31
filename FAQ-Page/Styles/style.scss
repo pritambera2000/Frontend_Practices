@@ -5,10 +5,11 @@ $clr-white: #fff;
 $primary-font: "Kumbh Sans", sans-serif;
 $clr-primary: #ee6352;
 $clr-secondary: #d16e8d;
+$clr-blue: #021ffe;
 $clr-gredient: linear-gradient(90deg, #ee6352, #d16e8d);
-$fnt-weight:700;
+$fnt-weight: 700;
 $clr-paragraph: hsl(14, 88%, 65%);
-$clr-border:rgb(151, 149, 149);
+$clr-border: rgb(151, 149, 149);
 * {
   margin: 0;
   padding: 0;
@@ -17,15 +18,7 @@ body {
   background: $clr-gredient;
   font-family: $primary-font;
 }
-.main {
-  background: $clr-white;
-  margin: 0 1em;
-  padding: 2em 2em;
-  border-radius: 2em;
-  padding-top: 9em;
-  box-shadow: 0px 0px 50px 2px rgba(100, 93, 93, 0.5);
-}
-
+/* == Styles for Images and Main Title == */
 .hero {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -33,7 +26,6 @@ body {
     text-align: center;
   }
 }
-
 .img {
   display: flex;
   align-items: center;
@@ -52,7 +44,18 @@ body {
     width: 317px;
   }
 }
+/* == Main div with all Faq's == */
+.main {
+  background: $clr-white;
+  margin: 0 1em;
+  padding: 2em 2em;
+  border-radius: 2em;
+  padding-top: 9em;
+  box-shadow: 0px 0px 50px 2px rgba(100, 93, 93, 0.5);
+}
+/* == article with Question & Answer == */
 .questions_answers {
+  /* Question & Button */
   .question {
     padding: 1em 0;
     border-bottom: 1px solid $clr-border;
@@ -61,27 +64,34 @@ body {
       align-items: center;
       justify-content: space-between;
       &:hover {
-        
+        color: $clr-blue;
         cursor: pointer;
       }
-  
     }
     .question-btn {
       background: transparent;
       border: none;
       cursor: pointer;
+      height: 0.8em;
+      width: 1.7em;
+      img {
+        height: 0.8em;
+        width: 1.3em;
+      }
     }
   }
+  /* == Answer == */
   .answer {
     p {
       padding-top: 1em;
-      color:$clr-paragraph;
+      color: $clr-paragraph;
       border-bottom: 1px solid $clr-border;
-      padding-bottom:0.5em;
+      padding-bottom: 0.5em;
     }
   }
 }
 
+/* == Styling for the Footer == */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -90,37 +100,38 @@ body {
   a {
     color: hsl(64, 97%, 71%);
   }
-  .pritam{
-    font-size:0.9rem;
-    span{
-      font-size:1.3rem;
+  .pritam {
+    font-size: 0.9rem;
+    span {
+      font-size: 1.3rem;
     }
-    &:hover{
+    &:hover {
       transition: 0.3s;
       font-weight: $fnt-weight;
-      color:$clr-white;
-
+      color: $clr-white;
     }
-  
   }
 }
-.show_answer{
-  .answer{
-    display:block;}
-    .question-btn{
-      transition: 0.3s;
-      transform: rotate(180deg);
+/* == Important For JavaScript(Toggling) Functionality == */
+.show_answer {
+  .answer {
+    display: block;
+  }
+  .question-btn {
+    transition: 0.3s;
+    transform: rotate(180deg);
+  }
+  .question {
+    p {
+      font-weight: $fnt-weight;
     }
-   .question{
-     p{
-       font-weight:$fnt-weight;
-     }
-   }
+  }
 }
 .answer {
   display: none;
 }
 
+/* == For Large Screens == */
 
 @media only screen and (min-width: 750px) {
   .hero {
@@ -133,33 +144,33 @@ body {
       margin: 4em 2em;
       padding-left: 16em;
       text-align: center;
-      .answer{
-        p{
-          text-align:left;
-          font-size:1em;
+      .answer {
+        p {
+          text-align: left;
+          font-size: 1em;
         }
       }
     }
   }
-.questions_answers{
-  .question{
-    font-size:1.3em;
-    p{
-      &:hover {
-        background-image: linear-gradient(90deg, red, blue);
-        background-clip: text;
-        color: transparent;
-        cursor: pointer;
+  .questions_answers {
+    .question {
+      font-size: 1.3em;
+      p {
+        &:hover {
+          background-image: linear-gradient(90deg, red, blue);
+          background-clip: text;
+          color: transparent;
+          cursor: pointer;
+        }
       }
-    }
-    .question-btn{
-      img{
-        height:0.8em;
-        width:1.2em;
+      .question-btn {
+        img {
+          height: 0.8em;
+          width: 1.2em;
+        }
       }
     }
   }
-}
   .img {
     .img1 {
       position: absolute;
