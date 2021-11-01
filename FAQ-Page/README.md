@@ -32,4 +32,6 @@ This canbe added with any website with some changes in colors in the main pages 
 
 ## What I learned
 BrushedUp some basic Concepts of CSS/JS
+## Deployment Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ff895045-fa73-4ddb-ad80-77b3b0143d4c/deploy-status)](https://app.netlify.com/sites/faqbypritam/deploys)
 
