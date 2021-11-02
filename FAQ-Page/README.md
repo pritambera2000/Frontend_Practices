@@ -25,7 +25,10 @@ This canbe added with any website with some changes in colors in the main pages 
 ## Screenshots
 
 ![](images/ScreenShots/desktopVersion.png)
-![](images/ScreenShots/mobileVersion.png)
+<!-- ![](images/ScreenShots/mobileVersion.png) -->
+<p align="center">
+<img src="images/ScreenShots/mobileVersion.png">
+</p>
 
 <!-- <img  src="images/ScreenShots/desktopVersion.png">
 <img align="center" height="400"  src="images/ScreenShots/mobileVersion.png"> -->
@@ -33,5 +36,5 @@ This canbe added with any website with some changes in colors in the main pages 
 ## What I learned
 BrushedUp some basic Concepts of CSS/JS
 ## Deployment Status
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ff895045-fa73-4ddb-ad80-77b3b0143d4c/deploy-status)](https://app.netlify.com/sites/faqbypritam/deploys)
+[![Netlify Status](https://img.shields.io/badge/-Sucess-%234cf5b1?style=for-the-badge&logo=Netlify&labelColor=061820&color=CAEFEC&logoWidth=30)](https://app.netlify.com/sites/faqbypritam/deploys)
 
