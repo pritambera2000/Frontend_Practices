@@ -1,0 +1,18 @@
+$primary-clr: rgb(78, 75, 75);
+$secondary-clr:white;
+$purple-clr:rgb(206, 98, 206);
+
+@function setTextColor($color){
+    @if($color == $primary-clr){
+        @return $secondary-clr;
+    } 
+    @else {
+        @return  $primary-clr;
+    } 
+    
+}
+
+@mixin setbg($color) {
+    background: $color;
+    color : setTextColor($color);
+};
