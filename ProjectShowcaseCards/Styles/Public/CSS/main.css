@@ -18,16 +18,18 @@ body p {
   font-weight: 650;
 }
 
-body nav {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: #4e4b4b;
+  color: white;
 }
 
-body nav ul {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,10 +42,86 @@ body nav ul {
   text-decoration: none;
 }
 
-body nav ul li {
+nav ul li {
   list-style: none;
 }
 
-body nav ul li .text {
-  display: none;
+svg {
+  height: 30px;
+  width: 70px;
+  padding: 0 1em;
+}
+
+svg path {
+  fill: red;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.icon:hover .icon-font {
+  opacity: 1;
+}
+
+.icon:hover .text {
+  -webkit-transform: scale(1) translateY(40px);
+          transform: scale(1) translateY(40px);
+}
+
+.icon .icon-font {
+  font-size: 1.7rem;
+  padding: 0 1em;
+  color: white;
+  opacity: 0.8;
+}
+
+.icon .text {
+  position: absolute;
+  opacity: 0.8;
+  -webkit-transform: scale(0) translateY(0px);
+          transform: scale(0) translateY(0px);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  background: blue;
+  color: white;
+  display: inline-block;
+  padding: .2em .5em .3em;
+  border-radius: 0.5em;
+}
+
+.main-title {
+  text-align: center;
+  margin: 1.2em 0;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: (320px)[2];
+      grid-template-columns: repeat(2, 320px);
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card1 {
+  background-image: url("../Images/faqDesktop.png");
 }
