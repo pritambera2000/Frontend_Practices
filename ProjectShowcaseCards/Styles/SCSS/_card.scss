@@ -1,0 +1,84 @@
+.main {
+    &-title {
+      text-align: center;
+      margin: 1.2em 0;
+    }
+  }
+  .cards {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 320px);
+    gap: 20px;
+    justify-content: center;
+    .card{
+        background-size: contain;
+        padding:10rem 0 0 0;
+        transition: transform 0.3s ease;
+        border-radius: 1em;
+        // height: 17rem;
+        // overflow: hidden;
+
+        // height:25vmin;
+        // background-repeat: no-repeat;
+        &:hover{
+            transform: scale(1.05);
+            .card-content{
+                transform: translateY(0);
+            }
+            .card-title{
+                &:after{
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+    .card-content{
+        // background: black;
+        padding:1em;
+        background:$black-gradient-clr;
+        color:white;
+        // height:7rem;
+        transform: translateY(35%);
+    }
+    .card-title{
+        position:relative;
+        padding: 0.5em 0;
+        
+        &:after{
+            content: '';
+            position: absolute;
+            height:2px;
+            bottom:0;
+            left:0;
+            background: $green-clr;
+            width:100%;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+
+        }
+    }
+    .card-description{
+        
+            padding: 0.6rem 0;
+        
+    }
+
+  }
+
+  
+  .card-1{
+    background-image: url('../../Images/faqDesktop.png');
+
+  }
+  .card-2{
+    background-image: url('../../Images/NoteTakerDesktop.png');
+
+  }
+  .card-3{
+    background-image: url('../../Images/SnakeGame.png');
+
+  }
+  .card-4{
+    background-image: url('../../Images/AnimatedNavbarDesktop.png');
+  }
