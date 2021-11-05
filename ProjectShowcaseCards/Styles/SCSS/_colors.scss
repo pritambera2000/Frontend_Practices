@@ -1,7 +1,17 @@
 $primary-clr: rgb(78, 75, 75);
 $secondary-clr:white;
 $purple-clr:rgb(206, 98, 206);
-
+$black-gradient-clr:linear-gradient(
+    hsla(0, 0%, 0%, 0 ),
+    hsla(20, 0%, 0%, 0.5) 10%,
+    hsla(0, 0%, 0%, 1),
+);
+$blue-gradient: linear-gradient(
+    hsl(192, 69, 89),
+    hsl(212, 96, 81) 20%,
+    hsl(212, 89, 75),
+);
+$green-clr:#5BF559;
 @function setTextColor($color){
     @if($color == $primary-clr){
         @return $secondary-clr;

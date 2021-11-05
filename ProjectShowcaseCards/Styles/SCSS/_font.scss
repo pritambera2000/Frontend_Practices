@@ -4,3 +4,12 @@ $font-stack :'Russo One', sans-serif;
 $font-stack1 :'Roboto Mono', monospace;
 $font-weight : 500;
 $font-weight-bold:650;
+
+body{
+    font-family:$font-stack1;
+    font-weight:$font-weight-bold;
+}
+h2,.text{
+    font-family:$font-stack;
+    font-weight:$font-weight-bold;
+}
