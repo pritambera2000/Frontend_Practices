@@ -111,6 +111,7 @@ nav .icon .text {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   border-radius: 1em;
+  overflow: hidden;
 }
 
 .cards .card:hover {
@@ -133,8 +134,8 @@ nav .icon .text {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(10%, rgba(0, 0, 0, 0.5)), to(black));
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 10%, black);
   color: white;
-  -webkit-transform: translateY(35%);
-          transform: translateY(35%);
+  -webkit-transform: translateY(49%);
+          transform: translateY(49%);
 }
 
 .cards .card-title {
@@ -161,7 +162,8 @@ nav .icon .text {
 }
 
 .cards .card-description {
-  padding: 0.6rem 0;
+  margin: 0.7rem 0;
+  height: 2rem;
 }
 
 .card-1 {

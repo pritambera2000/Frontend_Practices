@@ -16,7 +16,7 @@
         transition: transform 0.3s ease;
         border-radius: 1em;
         // height: 17rem;
-        // overflow: hidden;
+        overflow: hidden;
 
         // height:25vmin;
         // background-repeat: no-repeat;
@@ -38,7 +38,7 @@
         background:$black-gradient-clr;
         color:white;
         // height:7rem;
-        transform: translateY(35%);
+        transform: translateY(49%);
     }
     .card-title{
         position:relative;
@@ -60,7 +60,8 @@
     }
     .card-description{
         
-            padding: 0.6rem 0;
+            margin: 0.7rem 0;
+            height: 2rem;
         
     }
 
