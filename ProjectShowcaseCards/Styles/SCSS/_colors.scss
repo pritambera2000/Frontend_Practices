@@ -11,7 +11,7 @@ $blue-gradient: linear-gradient(
     hsl(212, 96, 81) 20%,
     hsl(212, 89, 75),
 );
-$green-clr:#5BF559;
+$green-clr:#09C372;
 @function setTextColor($color){
     @if($color == $primary-clr){
         @return $secondary-clr;
