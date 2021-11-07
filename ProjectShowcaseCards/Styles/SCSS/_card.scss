@@ -17,9 +17,9 @@
         border-radius: 1em;
         // height: 17rem;
         overflow: hidden;
-
-        // height:25vmin;
-        // background-repeat: no-repeat;
+      .card-title{
+        margin-top: -1em
+      }
         &:hover{
             transform: scale(1.05);
             .card-content{
@@ -38,7 +38,7 @@
         background:$black-gradient-clr;
         color:white;
         // height:7rem;
-        transform: translateY(49%);
+        transform: translateY(57%);
     }
     .card-title{
         position:relative;

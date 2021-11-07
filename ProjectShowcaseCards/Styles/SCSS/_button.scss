@@ -1,0 +1,26 @@
+@mixin buttonGeneral(){
+    font-family:$font-stack;
+    background: transparent;
+    padding:0.6em;
+    margin-bottom: 0.25em;
+
+    &:hover{
+        // text-transform: uppercase;
+        // font-size:1em;
+        transition:background 0.3s ease;
+    }
+}
+
+.card-btn-container{
+    a{
+        text-decoration: none;
+    }
+    .learn-more{
+        @include buttonGeneral();
+        border: 2px solid $green-clr;
+        &:hover{
+            background: $green-clr;
+            border: none;
+        }
+    }
+}
