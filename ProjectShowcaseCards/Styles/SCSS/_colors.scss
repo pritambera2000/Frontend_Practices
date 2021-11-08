@@ -11,7 +11,16 @@ $blue-gradient: linear-gradient(
     hsl(212, 96, 81) 20%,
     hsl(212, 89, 75),
 );
+$shadow-clr:0 4px 8px rgba(0,30,84,0.7);
+$nav-blue-clr:#7596F8;
+$bg-opacity: hsla(0,0%,97.3%,0.58);
+$gray-clr:#dbe1e8;
 $green-clr:#09C372;
+$orange-clr:#FA8142;
+$blue-clr: #1FDDFF;
+$yellow-clr:#FDC835;
+$yellow-gradient:linear-gradient(90deg, $orange-clr, $yellow-clr);
+$blue-orange-gradient:linear-gradient(80deg, $orange-clr,$blue-clr);
 @function setTextColor($color){
     @if($color == $primary-clr){
         @return $secondary-clr;
