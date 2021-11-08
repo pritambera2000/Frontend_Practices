@@ -1,7 +1,9 @@
+
 .main {
     &-title {
       text-align: center;
       margin: 1.2em 0;
+      // background:$blue-orange-gradient;      
     }
   }
   .cards {
@@ -14,7 +16,8 @@
         background-size: contain;
         padding:10rem 0 0 0;
         transition: transform 0.3s ease;
-        border-radius: 1em;
+        border-radius: 0.7em;
+        box-shadow: $shadow-clr;
         // height: 17rem;
         overflow: hidden;
       .card-title{
@@ -38,11 +41,14 @@
         background:$black-gradient-clr;
         color:white;
         // height:7rem;
-        transform: translateY(57%);
+        transform: translateY(67%);
     }
     .card-title{
         position:relative;
         padding: 0.5em 0;
+        // background-image:$yellow-gradient;
+        // background-clip: text;
+        // color:transparent;
         
         &:after{
             content: '';
@@ -61,7 +67,7 @@
     .card-description{
         
             margin: 0.7rem 0;
-            height: 2rem;
+            height: 3rem;
         
     }
 

@@ -3,6 +3,7 @@
 @import './SCSS/nav';
 @import './SCSS/card';
 @import './SCSS/button';
+@import './SCSS/footer';
 
 
 
@@ -10,4 +11,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+body{
+    background:$gray-clr;
 }

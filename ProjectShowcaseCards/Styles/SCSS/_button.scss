@@ -1,26 +1,37 @@
 @mixin buttonGeneral(){
     font-family:$font-stack;
-    background: transparent;
     padding:0.6em;
     margin-bottom: 0.25em;
+    border-radius: 0.5em;
+    cursor: pointer;
+
+}
+
+@mixin buttonOutline($bg,$color:#fff) {
+    background: transparent;
+    color:$color;
+    border: 2px solid $bg;
 
     &:hover{
-        // text-transform: uppercase;
-        // font-size:1em;
-        transition:background 0.3s ease;
+        background: $bg;
+        color: $color;
+        transform: translateY(-2px);
+        transition: transform 0.4s ease;
     }
 }
+
 
 .card-btn-container{
     a{
         text-decoration: none;
+        color:#fff;
     }
     .learn-more{
         @include buttonGeneral();
-        border: 2px solid $green-clr;
-        &:hover{
-            background: $green-clr;
-            border: none;
-        }
+        @include buttonOutline($green-clr);
+    }
+    .code{
+        @include buttonGeneral();
+        @include buttonOutline($orange-clr);        
     }
 }

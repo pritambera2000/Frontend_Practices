@@ -58,7 +58,7 @@ nav .icon:hover .icon-font {
   opacity: 1;
 }
 
-nav .icon:hover .text {
+nav .icon:hover .text-home, nav .icon:hover .text-github, nav .icon:hover .text-like {
   -webkit-transform: scale(1) translateY(40px);
           transform: scale(1) translateY(40px);
 }
@@ -70,7 +70,7 @@ nav .icon .icon-font {
   opacity: 0.8;
 }
 
-nav .icon .text {
+nav .icon .text-home {
   position: absolute;
   opacity: 0.8;
   -webkit-transform: scale(0) translateY(0px);
@@ -79,10 +79,42 @@ nav .icon .text {
   transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
-  background: blue;
+  background: #7596F8;
   color: white;
   display: inline-block;
-  padding: 0.2em 0.5em 0.3em;
+  padding: 0.32em 0.5em 0.3em;
+  border-radius: 0.5em;
+}
+
+nav .icon .text-github {
+  position: absolute;
+  opacity: 0.8;
+  -webkit-transform: scale(0) translateY(0px);
+          transform: scale(0) translateY(0px);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  background: #09C372;
+  color: white;
+  display: inline-block;
+  padding: 0.32em 0.5em 0.3em;
+  border-radius: 0.5em;
+}
+
+nav .icon .text-like {
+  position: absolute;
+  opacity: 0.8;
+  -webkit-transform: scale(0) translateY(0px);
+          transform: scale(0) translateY(0px);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  background: #FA8142;
+  color: white;
+  display: inline-block;
+  padding: 0.32em 0.5em 0.3em;
   border-radius: 0.5em;
 }
 
@@ -110,7 +142,9 @@ nav .icon .text {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  border-radius: 1em;
+  border-radius: 0.7em;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 30, 84, 0.7);
+          box-shadow: 0 4px 8px rgba(0, 30, 84, 0.7);
   overflow: hidden;
 }
 
@@ -138,8 +172,8 @@ nav .icon .text {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(10%, rgba(0, 0, 0, 0.5)), to(black));
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 10%, black);
   color: white;
-  -webkit-transform: translateY(57%);
-          transform: translateY(57%);
+  -webkit-transform: translateY(67%);
+          transform: translateY(67%);
 }
 
 .cards .card-title {
@@ -167,7 +201,7 @@ nav .icon .text {
 
 .cards .card-description {
   margin: 0.7rem 0;
-  height: 2rem;
+  height: 3rem;
 }
 
 .card-1 {
@@ -188,24 +222,65 @@ nav .icon .text {
 
 .card-btn-container a {
   text-decoration: none;
+  color: #fff;
 }
 
 .card-btn-container .learn-more {
   font-family: "Russo One", sans-serif;
-  background: transparent;
   padding: 0.6em;
   margin-bottom: 0.25em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
   border: 2px solid #09C372;
 }
 
 .card-btn-container .learn-more:hover {
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
+  background: #09C372;
+  color: #fff;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
-.card-btn-container .learn-more:hover {
-  background: #09C372;
-  border: none;
+.card-btn-container .code {
+  font-family: "Russo One", sans-serif;
+  padding: 0.6em;
+  margin-bottom: 0.25em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #FA8142;
+}
+
+.card-btn-container .code:hover {
+  background: #FA8142;
+  color: #fff;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+footer p {
+  text-align: center;
+  margin: 1.5rem 0 0 0;
+}
+
+footer p code {
+  background: linear-gradient(80deg, #FA8142, #1FDDFF);
+  font-size: 1.1em;
+}
+
+footer .uil-coffee {
+  font-size: 0.87em;
 }
 
 * {
@@ -213,4 +288,8 @@ nav .icon .text {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  background: #dbe1e8;
 }
