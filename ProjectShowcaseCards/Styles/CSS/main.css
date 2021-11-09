@@ -127,8 +127,8 @@ nav .icon .text-like {
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  -ms-grid-columns: (320px)[2];
-      grid-template-columns: repeat(2, 320px);
+  -ms-grid-columns: (320px)[1];
+      grid-template-columns: repeat(1, 320px);
   gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -136,15 +136,18 @@ nav .icon .text-like {
 }
 
 .cards .card {
-  background-size: contain;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: top;
   padding: 10rem 0 0 0;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   border-radius: 0.7em;
-  -webkit-box-shadow: 0 4px 8px rgba(0, 30, 84, 0.7);
-          box-shadow: 0 4px 8px rgba(0, 30, 84, 0.7);
+  -webkit-box-shadow: 4px 4px 0px #212121;
+          box-shadow: 4px 4px 0px #212121;
+  height: 20rem;
   overflow: hidden;
 }
 
@@ -153,8 +156,22 @@ nav .icon .text-like {
 }
 
 .cards .card:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 8px 8px 0px #212121;
+          box-shadow: 8px 8px 0px #212121;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.cards .card:hover .card-description {
+  margin: 0.7rem 0;
+}
+
+.cards .card:hover .card-description::before {
+  display: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .cards .card:hover .card-content {
@@ -169,19 +186,18 @@ nav .icon .text-like {
 
 .cards .card-content {
   padding: 1em;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(10%, rgba(0, 0, 0, 0.5)), to(black));
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 10%, black);
+  background: #171717;
   color: white;
-  -webkit-transform: translateY(67%);
-          transform: translateY(67%);
+  -webkit-transform: translateY(36%);
+          transform: translateY(36%);
 }
 
-.cards .card-title {
+.cards .card-content .card-title {
   position: relative;
   padding: 0.5em 0;
 }
 
-.cards .card-title:after {
+.cards .card-content .card-title:after {
   content: '';
   position: absolute;
   height: 2px;
@@ -199,9 +215,19 @@ nav .icon .text-like {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-.cards .card-description {
-  margin: 0.7rem 0;
+.cards .card-content .card-description {
+  margin: 0.7rem 0 0 0;
   height: 3rem;
+}
+
+.cards .card-content .card-description::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  top: 27.49%;
+  left: 0;
+  background: #FA8142;
+  width: 95%;
 }
 
 .card-1 {
