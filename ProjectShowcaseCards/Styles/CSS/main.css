@@ -54,6 +54,10 @@ nav .icon {
   position: relative;
 }
 
+nav .icon .uil-estate, nav .icon .uil-heart {
+  display: none;
+}
+
 nav .icon:hover .icon-font {
   opacity: 1;
 }
@@ -126,9 +130,8 @@ nav .icon .text-like {
 .cards {
   display: -ms-grid;
   display: grid;
-  height: 100vh;
-  -ms-grid-columns: (320px)[1];
-      grid-template-columns: repeat(1, 320px);
+  -ms-grid-columns: (250px)[1];
+      grid-template-columns: repeat(1, 250px);
   gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -136,7 +139,7 @@ nav .icon .text-like {
 }
 
 .cards .card {
-  background-size: 400px;
+  background-size: 329px;
   background-repeat: no-repeat;
   background-position: top;
   padding: 10rem 0 0 0;
@@ -145,8 +148,8 @@ nav .icon .text-like {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   border-radius: 0.7em;
-  -webkit-box-shadow: 4px 4px 0px #212121;
-          box-shadow: 4px 4px 0px #212121;
+  -webkit-box-shadow: -4px -4px 0px #212121;
+          box-shadow: -4px -4px 0px #212121;
   height: 20rem;
   overflow: hidden;
 }
@@ -158,8 +161,8 @@ nav .icon .text-like {
 .cards .card:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
-  -webkit-box-shadow: 8px 8px 0px #212121;
-          box-shadow: 8px 8px 0px #212121;
+  -webkit-box-shadow: 4px 4px 0px #212121;
+          box-shadow: 4px 4px 0px #212121;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -188,8 +191,9 @@ nav .icon .text-like {
   padding: 1em;
   background: #171717;
   color: white;
-  -webkit-transform: translateY(36%);
-          transform: translateY(36%);
+  height: 11rem;
+  -webkit-transform: translateY(13%);
+          transform: translateY(13%);
 }
 
 .cards .card-content .card-title {
@@ -216,7 +220,7 @@ nav .icon .text-like {
 }
 
 .cards .card-content .card-description {
-  margin: 0.7rem 0 0 0;
+  margin: 1rem 0 34px 0;
   height: 3rem;
 }
 
@@ -224,10 +228,10 @@ nav .icon .text-like {
   content: '';
   position: absolute;
   height: 2px;
-  top: 27.49%;
-  left: 0;
+  top: 24.69%;
+  left: 1rem;
   background: #FA8142;
-  width: 95%;
+  width: 87%;
 }
 
 .card-1 {
@@ -307,6 +311,20 @@ footer p code {
 
 footer .uil-coffee {
   font-size: 0.87em;
+}
+
+@media only screen and (min-width: 560px) {
+  .cards {
+    -ms-grid-columns: (250px)[2];
+        grid-template-columns: repeat(2, 250px);
+  }
+}
+
+@media only screen and (min-width: 860px) {
+  .cards {
+    -ms-grid-columns: (320px)[2];
+        grid-template-columns: repeat(2, 320px);
+  }
 }
 
 * {
