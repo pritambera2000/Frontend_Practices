@@ -2,7 +2,7 @@
     &-title {
       text-align: center;
       margin: 1.2em 0;
-      // background:$blue-orange-gradient;      
+      // background: $orange-green-gradient;
     }
   }
   .cards {
@@ -22,7 +22,7 @@
         height: 20rem;
         overflow: hidden;
       .card-title{
-        margin-top: -1em
+        margin-top: -1em;
       }
         &:hover{
             transform: scale(1.02);

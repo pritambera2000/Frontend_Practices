@@ -6,7 +6,7 @@
         background: $text-color;
         color: $secondary-clr;
         display: inline-block;
-        padding: 0.32em 0.5em 0.3em;
+        padding: 0.32em 0.32em 0.3em;
         border-radius: 0.5em;
 }
 nav {
@@ -36,6 +36,7 @@ nav {
       &:hover {
         .icon-font {
           opacity: 1;
+          // color:$green-clr;
         }
         .text-home,.text-github,.text-like {
           transform: scale(1) translateY(40px);

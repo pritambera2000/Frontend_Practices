@@ -86,7 +86,7 @@ nav .icon .text-home {
   background: #7596F8;
   color: white;
   display: inline-block;
-  padding: 0.32em 0.5em 0.3em;
+  padding: 0.32em 0.32em 0.3em;
   border-radius: 0.5em;
 }
 
@@ -102,7 +102,7 @@ nav .icon .text-github {
   background: #09C372;
   color: white;
   display: inline-block;
-  padding: 0.32em 0.5em 0.3em;
+  padding: 0.32em 0.32em 0.3em;
   border-radius: 0.5em;
 }
 
@@ -118,7 +118,7 @@ nav .icon .text-like {
   background: #FA8142;
   color: white;
   display: inline-block;
-  padding: 0.32em 0.5em 0.3em;
+  padding: 0.32em 0.32em 0.3em;
   border-radius: 0.5em;
 }
 
@@ -311,6 +311,16 @@ footer p code {
 
 footer .uil-coffee {
   font-size: 0.87em;
+}
+
+footer .footer-a {
+  text-decoration: none;
+  color: #171717;
+}
+
+footer .footer-a:hover {
+  font-weight: bold;
+  color: #000;
 }
 
 @media only screen and (min-width: 560px) {
