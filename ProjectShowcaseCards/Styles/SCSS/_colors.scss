@@ -25,6 +25,7 @@ $blue-clr: #1FDDFF;
 $yellow-clr:#FDC835;
 $yellow-gradient:linear-gradient(90deg, $orange-clr, $yellow-clr);
 $blue-orange-gradient:linear-gradient(80deg, $orange-clr,$blue-clr);
+$orange-green-gradient:linear-gradient(80deg, $orange-clr,$green-clr);
 @function setTextColor($color){
     @if($color == $primary-clr){
         @return $secondary-clr;
