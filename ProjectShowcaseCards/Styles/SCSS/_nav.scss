@@ -30,6 +30,9 @@ nav {
       justify-content: center;
       flex-direction: column;
       position: relative;
+      .uil-estate,.uil-heart{
+        display:none;
+      }
       &:hover {
         .icon-font {
           opacity: 1;
