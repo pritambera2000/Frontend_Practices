@@ -1,0 +1,7 @@
+@import "./variables";
+@mixin gradient {
+    background:linear-gradient(to left,$gradient-color1,$gradient-color2);
+}
+@mixin navBtn-gradient {
+    background:linear-gradient(to right,$gradient-color1,$gradient-color2);
+}
