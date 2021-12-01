@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <script
+      src="https://kit.fontawesome.com/4f429dc612.js"
+      crossorigin="anonymous"
+    ></script>
     <title>BootStrap With Sass</title>
 </head>
 <body>
-    <h2>Hey! This Is Working Fine</h2>
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img class="logo_image" src="./assets/images/logo.png" alt="logo image">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Skills</a>
+              </li>
+              
+            </ul>
+            <button type="button" class="rounded-pill nav-btn">Hire Me
+                <span>
+                    <i class="fas fa-rocket"></i>
+                </span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    
+    <script src="./assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>
