@@ -1,6 +1,19 @@
 @import "./custom";
-@import "./Sass_Partials/navbar";
-@import "./Sass_Partials/mixins";
-@import "./Sass_Partials/variables";
-@import "./Sass_Partials/buttons"
+@import "./Sass_Partials/components/variables";
+@import "./Sass_Partials/components/animations";
+@import "./Sass_Partials/components/buttons";
+@import "./Sass_Partials/components/mixins";
+@import "./Sass_Partials/components/typography";
 
+@import "./Sass_Partials/sections/companies";
+@import "./Sass_Partials/sections/faq";
+@import "./Sass_Partials/sections/footer";
+@import "./Sass_Partials/sections/hero-section";
+@import "./Sass_Partials/sections/navbar";
+@import "./Sass_Partials/sections/projects";
+@import "./Sass_Partials/sections/services";
+@import "./Sass_Partials/sections/testimonials";
+
+*{
+    font-family: 'Fira Mono', monospace;
+}
