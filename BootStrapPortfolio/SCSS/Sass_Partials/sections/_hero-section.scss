@@ -1,0 +1,24 @@
+@import "../../custom";
+@import "../components/mixins";
+
+.intro-section{
+    @include gradient;
+    padding:9rem 0 0 0;
+
+}
+
+.intros{
+    .video-box{
+    position: relative;
+
+        a{
+            position: absolute;
+            span{
+                i{
+                    font-size: 6rem;
+                    color:$black;
+                }
+            }
+        }
+    }
+}
