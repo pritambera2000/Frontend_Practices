@@ -12,13 +12,31 @@
     position: relative;
 
         a{
-            position: absolute;
+            @include absoluteCenter;
             span{
                 i{
-                    font-size: 6rem;
-                    color:$black;
+                    font-size: 5.5rem;
+                    color:$secondary;
                 }
             }
         }
+    }
+}
+
+.video-animation{
+    position: absolute;
+    top:0;
+    left:0;
+    width:5.5rem;
+    height:5.5rem;
+    border:0.55rem solid $secondary;
+    border-radius:50%;
+    animation: videoAnimation 1s linear infinite;
+
+    &--wave1{
+        animation-delay: 1s;
+    }
+    &--wave2{
+        animation-delay: 1.2s;
     }
 }

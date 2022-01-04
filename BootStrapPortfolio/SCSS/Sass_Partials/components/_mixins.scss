@@ -5,3 +5,12 @@
     background: linear-gradient(90deg, $dark-blue , $blue ); 
     
 }
+
+// Mixin For absoluteCenter
+
+@mixin absoluteCenter {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
