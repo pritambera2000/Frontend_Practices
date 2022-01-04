@@ -29,6 +29,10 @@
     background-color:$white;
     font-weight:700;
 
+    @include media-breakpoint-down(sm){
+        display:none;
+    }
+
     span{
         position: absolute;
         background-color: $secondary;

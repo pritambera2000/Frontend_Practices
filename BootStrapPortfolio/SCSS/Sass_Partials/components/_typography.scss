@@ -8,7 +8,10 @@
         display:inline-block;
         font-weight: 700;
         color:$white;
-        font-size:3.7rem;
+        font-size:3rem;
+        @include media-breakpoint-up(lg){
+            font-size: 3.7rem;
+        }
     }
 
     &--description{
@@ -17,4 +20,47 @@
         color:$white;
         margin:1.25rem 0 1.7rem 0;
     }
+}
+
+.display-3{
+    &-title{
+        font-size: 1.3rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        display: inline-block;
+        background-image: linear-gradient(to right, $secondary, $primary);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;
+        @include media-breakpoint-up(lg){
+            font-size: 1.9rem;
+        }
+
+    }
+}
+
+// HEADING LINE
+.heading-line{
+    &:before{
+        content:"";
+        display:block;
+        margin:0 auto;
+        height:0.1rem;
+        width:11rem;
+        background-color:$secondary;
+    }
+
+    &:after{
+        content:"";
+        margin:0 auto;
+        height:0.3rem;
+        width:3.7rem;
+        background-color:$secondary;
+        display:block;
+    }
+}
+
+// BORDER RIGHT
+.border-right{
+    border-right:0.15rem solid $gray-300;
+    height:100%;
 }

@@ -159,8 +159,8 @@ nav .icon .text-like {
 }
 
 .cards .card:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  -webkit-transform: scale(1.007);
+          transform: scale(1.007);
   -webkit-box-shadow: 4px 4px 0px #212121;
           box-shadow: 4px 4px 0px #212121;
   -webkit-transition: 0.3s ease;
