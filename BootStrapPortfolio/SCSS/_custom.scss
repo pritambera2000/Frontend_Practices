@@ -23,6 +23,11 @@ $black:    #000;
 $primary: $blue;
 $secondary: $dark-blue;
 
+// OverRides For Accordion Items
+$accordion-padding-y: 1.5rem;
+$accordion-padding-x: 1.5rem;
+
+$accordion-icon-width:1.5rem;
 
 
 @import "./bootstrap/scss/bootstrap.scss";
