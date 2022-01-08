@@ -1,0 +1,10 @@
+@import "./custom";
+
+
+*{
+    font-family: 'Fira Mono', monospace;
+}
+.test{
+    color:$primary;
+    background-color:$secondary;
+}
