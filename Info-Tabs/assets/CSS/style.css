@@ -11961,7 +11961,18 @@ fieldset:disabled .btn {
   font-family: 'Fira Mono', monospace;
 }
 
-.test {
-  color: #0d6efd;
-  background-color: #6c757d;
+.article .article-content {
+  display: none;
+}
+
+.article .active {
+  display: block;
+}
+
+.article-col {
+  background-color: #FFF0E5;
+}
+
+i {
+  color: #fff;
 }
