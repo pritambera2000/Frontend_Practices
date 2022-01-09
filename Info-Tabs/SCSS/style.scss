@@ -4,7 +4,22 @@
 *{
     font-family: 'Fira Mono', monospace;
 }
-.test{
-    color:$primary;
-    background-color:$secondary;
+
+// Hide Article-Content
+
+.article{
+    .article-content{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
 }
+
+.article-col{
+    background-color: #FFF0E5;
+}
+
+// i{
+//     color:$white;
+// }

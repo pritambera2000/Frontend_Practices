@@ -1,23 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/CSS/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
     <title>Info-Tabs</title>
-</head>
-<body>
-    
-  <div class="container">
-      <div class="row text-center">
-          <h4 class="test">BootStrap Is Working!</h4>
+  </head>
+  <body>
+    <section class="title">
+      <div class="container mt-4 mb-2">
+        <div class="row text-center">
+          <h2 class="fw-bold">Life in Madagascar</h2>
+          <p>
+                At 592,800 square kilometres (228,900 sq mi),Madagascar is the world's 47th
+                largest country,the 2nd largest island country and the fourth-largest
+                island.                
+          </p>
+        </div>
       </div>
-  </div>
+    </section>
+    <section class="main-content">
+      <div class="container mt-4">
+        <div class="row g-4">
+          <div class="col-lg-6 col-md-12 text-center">
+            <!-- <img src="./assets/images/girls-net-madagascar.jpg" alt="Main Image" title="coast-Coral-Pic" class="img-fluid"/> -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/images/girls-net-madagascar.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/cgm-bc-coast-reef.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/pnn-norway-humpback-sunset.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                      <!-- <i class="bi bi-arrow-right"></i> -->
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+          </div>
 
+          <div class="col-lg-6 col-md-12  article-col">
+            <div class="btn-group container-fluid m-0 p-0" role="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-danger active" data-id="history">
+                History
+              </button>
+              <button type="button" class="btn btn-warning" data-id="religions">
+                Religions
+              </button>
+              <button type="button" class="btn btn-success" data-id="life">
+                Life
+              </button>
+            </div>
+
+            <div class="article container rounded-3 article-col p-3">
+              <div class="article-content active" id="history">
+                <h4 class="text-center" >History</h4>
+                <p>
+                        Madagascar, officially the Republic of Madagascar , and previously known as the
+                        Malagasy Republic, is an island country in the Indian Ocean, approximately 400
+                        kilometres (250 miles) off the coast of East Africa across the Mozambique
+                        Channel. At 592,800 square kilometres (228,900 sq mi) Madagascar is the world's
+                        second-largest island country, after Indonesia. The nation consists of the
+                        island of Madagascar (the fourth-largest island in the world) and numerous
+                        smaller peripheral islands. 
+                </p>
+              </div>
+              <div class="article-content" id="religions">
+                <h4 class="text-center" >Religions</h4>
+                <p>
+                        According to the U.S. Department of State in 2011, 41% of Malagasys practiced
+                        Christianity, and 52% adhered to traditional religions,which tends to
+                        emphasize links between the living and the razana (ancestors); these numbers
+                        were drawn from the 1993 census. However, according to the Pew Research Center
+                        in 2010, 85% of the population now practiced Christianity, while just 4.5% of
+                        Malagasys practiced folk religions; among Christians, practitioners of
+                        Protestantism outnumbered adherents of Roman Catholicism.
+                </p>
+              </div>
+              <div class="article-content" id="life">
+                <h4 class="text-center">Life</h4>
+                <p>
+                        A wide variety of oral and written literature has developed in Madagascar. One
+                        of the island's foremost artistic traditions is its oratory, as expressed in the
+                        forms of hainteny (poetry), kabary (public discourse) and ohabolana
+                        (proverbs).An epic poem exemplifying these traditions, the Ibonia,
+                        has been handed down over the centuries in several different forms across the
+                        island, and offers insight into the diverse mythologies and beliefs of
+                        traditional Malagasy communities.This tradition was continued in the 20th
+                        century by such artists as Jean-Joseph Rabearivelo, who is considered Africa's
+                        first modern poet,and Elie Rajaonarison, an exemplar of the new wave of
+                        Malagasy poetry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./JavaScript/script.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
