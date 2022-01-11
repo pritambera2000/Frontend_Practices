@@ -55748,16 +55748,18 @@ textarea.form-control-lg {
 .footer a {
   color: #fff;
   text-decoration: none;
-}
-.footer a i {
   font-size: 1rem;
-  margin-left: 1rem;
+  margin-left: 0.7rem;
 }
 @media (min-width: 576px) {
-  .footer a i {
-    font-size: 3rem;
-    margin-left: 1.5rem;
+  .footer a {
+    font-size: 1.9rem;
+    margin-left: 1rem;
   }
+}
+.footer i {
+  font-size: 2.1rem;
+  margin-left: 0.7rem;
 }
 
 /*!
@@ -111451,6 +111453,10 @@ textarea.form-control-lg {
 
 .navigation {
   background: linear-gradient(90deg, #182848, #4b6cb7);
+}
+.navigation h2, .navigation .h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
 }
 .navigation li {
   padding: 0 1.2rem;

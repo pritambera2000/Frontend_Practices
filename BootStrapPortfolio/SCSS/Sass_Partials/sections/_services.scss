@@ -1,29 +1,28 @@
 @import "../../custom";
 
-.services{
-    position:relative;
-    padding:1rem 0;
+.services {
+  position: relative;
+  padding: 1rem 0;
 
-    &_content{
-        padding:1rem;
-        margin-top:0;
+  &_content {
+    padding: 1rem;
+    margin-top: 0;
 
-      
-        p{
-            font-size:0.8rem;
-            @include media-breakpoint-up(lg){
-                font-size:1rem;
-                }
-        }
-        .icon{
-            font-size:1.5rem;
-            color:$primary;
-            @include media-breakpoint-up(lg){
-            font-size:2.5rem;
-            }
-        }
+    p {
+      font-size: 0.8rem;
+      @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+      }
     }
-    &_img{
-        max-width: 100%;
+    .icon {
+      font-size: 1.5rem;
+      color: $primary;
+      @include media-breakpoint-up(lg) {
+        font-size: 2.5rem;
+      }
     }
+  }
+  &_img {
+    max-width: 100%;
+  }
 }

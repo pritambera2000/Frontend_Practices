@@ -2,22 +2,21 @@
 
 // Mixin For Color Gradient
 @mixin gradient {
-    background: linear-gradient(90deg, $dark-blue , $blue ); 
-    
+  background: linear-gradient(90deg, $dark-blue, $blue);
 }
 
 // Mixin For absoluteCenter
 
 @mixin absoluteCenter {
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 // Mixin For TransitionProperty
 
 @mixin transitionProperty {
-    transition-duration: 1000ms;
-    transition-property: all;
+  transition-duration: 1000ms;
+  transition-property: all;
 }
