@@ -1,0 +1,5 @@
+.container{
+    .hero-grid{
+        @include grid-2;
+    }
+}
