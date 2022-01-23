@@ -1,0 +1,5 @@
+@import './mixins';
+.services-grid{
+   @include grid-3;
+    margin-top: 1.5rem;
+}
