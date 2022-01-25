@@ -1,5 +1,58 @@
-@import './mixins';
-.projects-grid{
-   @include grid-3;
-    margin-top: 1.5rem;
+@import "./mixins";
+.container{
+  h2{
+    @include primary-button;
+    margin-top:1rem;
+  }
+}
+.projects-grid {
+  @include grid-1;
+  margin-top: 1.5rem;
+  .project {
+    border: 1px solid gray;
+    &-image {
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        filter: grayscale(100%) brightness(70%) blur(0.3px);
+      }
+    }
+    &-description {
+      position: relative;
+      h2{
+        font-size:1.7rem;
+        margin: $heading-margin;
+        padding-left: 0.3rem;
+      }
+      p {
+        margin: $heading-margin;
+        padding-left: 0.3rem;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        margin: -1rem 0;
+        height: 1px;
+        width: 100%;
+        background: black;
+      }
+    }
+    &-icons {
+      @include icon;
+      font-size: 1.7rem;
+      a {
+        text-decoration: none;
+        color: black;
+        margin: 0 0 0 1rem;
+      }
+      
+    }
+    
+  }
+}
+@media (min-width: 768px) {
+  .projects-grid{
+    @include grid-3;
+  }
 }

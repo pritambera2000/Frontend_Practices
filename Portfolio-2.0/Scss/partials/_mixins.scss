@@ -1,9 +1,54 @@
+@import "./variables";
+
 @mixin grid-3 {
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 1rem;
 }
 
 @mixin grid-2 {
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@mixin grid-1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  gap: 1rem;
+}
+
+@mixin icon {
+  a {
+    text-decoration: none;
+    .icon {
+      color: black;
+      transform: scale(1);
+      &:hover {
+        transition: 0.3s ease;
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+
+@mixin primary-button {
+  button {
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    padding: 0.5rem;
+    background: $black;
+    color: white;
+    border: 1px solid $black;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-weight: bold;
+    transform: scale(1);
+    &:hover {
+      transition: 0.3s ease;
+      transform: scale(1.05);
+    }
+  }
 }
