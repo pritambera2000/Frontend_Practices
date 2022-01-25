@@ -1,9 +1,17 @@
 @import './partials/variables';
 @import './partials/mixins';
 @import './partials/nav';
-@import './partials/hero';
+@import './partials/grid-col-2';
 @import './partials/services';
 @import './partials/projects';
-@import './partials/about';
-@import './partials/getInTouch';
 @import './partials/footer';
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Outfit', sans-serif;
+    p{
+        line-height:1.5rem;
+    }
+    scroll-behavior: smooth;
+}

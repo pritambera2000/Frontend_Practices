@@ -1,261 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script
-      src="https://kit.fontawesome.com/4f429dc612.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./assets/CSS/style.css" />
-    <title>Portfolio-2.0</title>
-  </head>
-  <body>
-    <!-- NavBar Section -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4f429dc612.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/CSS/style.css" />
+  <title>Pritam Bera</title>
+</head>
+
+<body>
+  <!-- NavBar Section -->
+  <div class="container">
     <nav class="navigation">
       <ul>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Reach me">Contact me</a></li>
-        <li><a href="#Works">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="mailto:dev.pritambera@pm.me">Hire Me</a></li>
       </ul>
     </nav>
-    <!-- Header Section -->
-    <!-- <header class="header">
+  </div>
+  <!-- Header Section -->
+  <!-- <header class="header">
       <h1>
         Hello, I'm Pritam
-      </h1>
+      </h1
     </header> -->
-    <!-- Hero Section -->
-    <div class="container">
-      <div class="hero-grid">
+  <!-- Hero Section -->
+  <div class="container">
+    <div class="hero-grid">
+      <div class="intro">
         <div class="intro-description">
-          <div class="intro-main-line">
-            <h1>
-              Hello, I'm Pritam
-            </h1>
-            <p>
-              Self Taught Developer With a Keen Interst in Linux & CyberSecurity
-            </p>
+          <h1>
+            Hello, I'm Pritam
+          </h1>
+          <p>
+            Self Taught Developer With a Keen Interst in Linux & CyberSecurity
+          </p>
+        </div>
+        <div class="intro-btn">
+          <button class="btn-primary">
+            <a href="https://twitter.com/dotslashpritam"> Get In Touch</a> <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="intro-pic">
+        <img src="./assets/images/Profile_with_laptop.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- What I Do Section -->
+
+  <div class="container">
+    <div class="service-heading">
+      <h2>What I DO</h2>
+    </div>
+    <div class="services-grid" id="services">
+      <!-- Service-1 -->
+      <div class="service">
+        <div class="card">
+          <div class="card-image">
+            <i class=" icon d-block fas fa-code"></i>
           </div>
-          <div class="intro-btn">
-            <button class="btn-primary">
-              Get In Touch
+          <div class="card-heading">
+            <h3>FrontEnd Development</h3>
+          </div>
+          <div class="card-description">
+            <p>
+              I Do Forntend Development Using Tech Stack HTML,CSS,BootStrap,TailWind CSS, JavaScript,React .
+
+            </p>
+            <button class="service-btn"><a href="https://github.com/pritambera2000/Frontend_Practices">Browse
+                Works</a></button>
+          </div>
+        </div>
+      </div>
+      <!-- Service-2 -->
+      <div class="service">
+        <div class="card">
+          <div class="card-image">
+            <i class=" icon d-block fas fa-edit"></i>
+          </div>
+          <div class="card-heading">
+            <h3>Technical Writing</h3>
+          </div>
+          <div class="card-description">
+            <p>
+              I Write Technical Tutorial/HowTo's about Linux and About Frontend Develpoment. And Try to simplyfy Things
+              In My Own Way .CheckOut My Blogs here.
+            </p>
+            <button class="service-btn"><a href="https://pritambera2000.hashnode.dev/">Read Blogs</a></button>
+          </div>
+        </div>
+      </div>
+      <!-- Service-3 -->
+      <div class="service">
+        <div class="card">
+          <div class="card-image">
+            <i class=" icon d-block fas fa-cloud"></i>
+          </div>
+          <div class="card-heading">
+            <h3>Open Source Contributor</h3>
+          </div>
+          <div class="card-description">
+            <p>
+              I'm a Open-Source Enthuasist. I open Sorce Every Project & Try to collaborate with community by
+              contributing their code with my minimal experience.
+            </p>
+            <button class="service-btn">
+              <a href="https://github.com/pritambera2000">View Profile</a>
             </button>
           </div>
         </div>
-
-        <div class="intro-pic">
-          <img src="./assets/images/Profile_with_laptop.png" alt="" />
-        </div>
       </div>
     </div>
+  </div>
 
-    <!-- What I Do Section -->
+  <!-- Project Section -->
 
-    <div class="container">
-      <div class="services-grid">
-        <!-- Service-1 -->
-        <div class="service-1">
-          <div class="card">
-            <div class="card-image">
-              <i class=" icon d-block fas fa-cloud"></i>
+  <div class="container">
+    <div class="project-heading">
+      <h2>See Latest Projects <button class="fas fa-arrow-right"><a
+            href="https://github.com/pritambera2000?tab=repositories">All</a> </button></i> </h2>
+    </div>
+    <div class="projects-grid" id="projects">
+      <!-- Project-1 -->
+      <div class="project">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/images/projects-images/bootstrapProject.png" alt="" />
+          </div>
+          <div class="project-description">
+            <h2>BootStrap Portfolio</h2>
+            <p>
+              This is a Complete Portfolio Website, Using BootStrap & SCSS . I Built This Project Along FreeCodeCamp's
+              Tutorial With Few changes For Learining Bootstrap.
+            </p>
+            <div class="project-icons">
+              <a href="https://github.com/pritambera2000/Frontend_Practices/tree/main/BootStrapPortfolio"><i
+                  class=" icon fab fa-github"></i></a>
+              <a href="https://bootstrap-portfolio-pritam.netlify.app/"><i class=" icon fas fa-paper-plane"></i></a>
             </div>
-            <div class="card-heading">
-              <h3>FrontEnd Development</h3>
-            </div>
-            <div class="card-description">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Perferendis, molestias!
-              </p>
-              <button class="service-btn"><a href="#">Browse Works</a></button>
-            </div>
+            <div class="view-project"></div>
           </div>
         </div>
-        <!-- Service-2 -->
-        <div class="service-2">
-          <div class="card">
-            <div class="card-image">
-              <i class=" icon d-block fas fa-cloud"></i>
-            </div>
-            <div class="card-heading">
-              <h3>Technical Writing</h3>
-            </div>
-            <div class="card-description">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Perferendis, molestias!
-              </p>
-              <button class="service-btn"><a href="#">Read Blogs</a></button>
-            </div>
+      </div>
+      <!-- Project-2 -->
+      <div class="project">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/images/projects-images/project3.png" alt="" />
           </div>
-        </div>
-        <!-- Service-3 -->
-        <div class="service-3">
-          <div class="card">
-            <div class="card-image">
-              <i class=" icon d-block fas fa-cloud"></i>
-            </div>
-            <div class="card-heading">
-              <h3>Open Source Contributor</h3>
-            </div>
-            <div class="card-description">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Perferendis, molestias!
-              </p>
-              <button class="service-btn">
-                <a href="#">Checkout Works</a>
-              </button>
+          <div class="project-description">
+            <h2>Project Cards</h2>
+            <p>
+              This is a Website With Cards For Showcasing Projects, With Some Cool Hover Animation.
+            </p>
+            <div class="project-icons">
+              <a href="https://github.com/pritambera2000/Frontend_Practices/tree/main/ProjectShowcaseCards"><i
+                  class=" icon fab fa-github"></i></a>
+              <a href="https://projects-showcase-cards.netlify.app"><i class=" icon fas fa-paper-plane"></i></a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Project Section -->
-
-    <div class="container">
-      <div class="projects-grid">
-        <!-- Project-1 -->
-        <div class="project-1">
-          <div class="project-card">
-            <div class="project-card-iamge">
-              <img
-                src="./assets/images/projects-images/bootstrapProject.png"
-                alt=""
-              />
-            </div>
-            <div class="project-card-description">
-              <h2>Project1 Heading</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis, nisi.
-              </p>
-              <div class="project-icons">
-                <a href="" class="fab fa-github"></a>
-                <a href="" class="fas fa-paper-plane"></a>
-              </div>
-              <div class="view-project"></div>
-            </div>
+      <!-- Project-3 -->
+      <div class="project">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/images/projects-images/project4.png" alt="" />
           </div>
-        </div>
-        <!-- Project-2 -->
-        <div class="project-2">
-          <div class="project-card">
-            <div class="project-card-iamge">
-              <img src="./assets/images/projects-images/project3.png" alt="" />
-            </div>
-            <div class="project-card-description">
-              <h2>Project1 Heading</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis, nisi.
-              </p>
-              <div class="project-icons">
-                <a href="" class="fab fa-github"></a>
-                <a href="" class="fas fa-paper-plane"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Project-3 -->
-        <div class="project-3">
-          <div class="project-card">
-            <div class="project-card-iamge">
-              <img src="./assets/images/projects-images/project4.png" alt="" />
-            </div>
-            <div class="project-card-description">
-              <h2>Project1 Heading</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis, nisi.
-              </p>
-              <div class="project-icons">
-                <a href="" class="fab fa-github"></a>
-                <a href="" class="fas fa-paper-plane"></a>
-              </div>
+          <div class="project-description">
+            <h2>FAQ Page</h2>
+            <p>
+              This is FAQ Page, can be added with any site for their FAQ Section. This is A Part Of Frontend-Mentor
+              Chellenge.
+            </p>
+            <div class="project-icons">
+              <a href="https://github.com/pritambera2000/Frontend_Practices/tree/main/FAQ-Page"><i
+                  class=" icon fab fa-github"></i></a>
+              <a href="https://faq-page-frontend.netlify.app"><i class=" icon fas fa-paper-plane"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- About Me Section -->
+  <!-- About Me Section -->
 
-    <div class="container">
-      <div class="about-me-grid">
-        <div class="about-me-description">
-          <h2>About Me</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
-            aut praesentium dicta voluptatem alias saepe error eos corporis rem
-            quibusdam!
-          </p>
-          <button class="btn-primary">My Resume</button>
-        </div>
-        <div class="about-me-pic">
-          <img src="./assets/images/Profile_with_laptop.png" alt="" />
-        </div>
+  <div class="container">
+    <div class="aboutme-grid">
+      <div class="aboutme-description">
+        <h2>About Me</h2>
+        <p>
+          My Name is Pritam Bera, I'm a Passionate Self Taught Developer From India. I Work With CSS, SCSS, BootStrap,
+          JavaScript. I'm Interested in All kind of Technology Realated Stuffs. I'm Currently Learning Linux
+          Fundamentals And LifeLong Learner Of JavaScript.
+        </p>
+        <button class="btn-primary">My Resume <i class="fas fa-download"></i> </button>
+      </div>
+      <div class="aboutme-pic">
+        <img src="./assets/images/Profile_with_laptop.png" alt="" />
       </div>
     </div>
+  </div>
 
-    <div class="container">
-      <div class="get-in-touch-from">
-        <div class="from-description">
-          <h2>Get In Touch</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            dignissimos quasi cum cumque.
-          </p>
-        </div>
-        <div class="from">
-          <form action="#">
-            <ul>
-              <li>
-                <label for="name">Name:</label>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="e.g Pritam Bera"
-                  required
-                />
-              </li>
-              <li>
-                <label for="e-mail">E-mail</label>
-                <input
-                  type="e-mail"
-                  id="e-mail"
-                  placeholder="dev.pritambera@pm.me"
-                  required
-                />
-              </li>
-              <li>
-                <label for="Message">Message</label>
-                <textarea
-                  name="user-msg"
-                  id="msg"
-                  cols="20"
-                  rows="10"
-                  placeholder="Hello From Pritam"
-                ></textarea>
-              </li>
-              <li>
-                <button type="submit">Send</button>
-              </li>
-            </ul>
-          </form>
-        </div>
+  <!-- Get In Touch Section -->
+
+  <div class="container">
+    <div class="get-in-touch-grid">
+      <div class="get-in-touch-description">
+        <h2>Get In Touch</h2>
+        <p>
+          If You Have Any quaries feel free to contact me . Currently I'm Looking For Remote Oppotunities And Freelance
+          Work.Free 24X7 for Work!
+        </p>
+      </div>
+
+      <!-- Get In Touch Form -->
+
+      <div class="form-container">
+        <form action="#">
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" placeholder="e.g Pritam Bera" required />
+            </li>
+            <li>
+              <label for="e-mail">E-mail:</label>
+              <input type="e-mail" id="e-mail" placeholder="dev.pritambera@pm.me" required />
+            </li>
+            <li>
+              <label for="Message">Message:</label>
+              <textarea name="user-msg" id="msg" placeholder="Hello From Pritam"></textarea>
+            </li>
+            <li>
+              <button type="submit">Send</button>
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
-    <footer class="footer">
-      <div class="footer-flex">
-        <div class="copyright">
-          @ 2022 Pritam All rights Reserved
-        </div>
-        <div class="social-icons"></div>
+  </div>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-flex">
+      <div class="copyright">
+        Made With <i class="fas fa-mug-hot"></i> by <a href="https://twitter.com/dotslashpritam">Pritam</a>
       </div>
-    </footer>
-  </body>
+      <div class="footer-icon">
+        <a href="mailto:dev.pritambera@pm.me"> <i class="icon fas fa-envelope"></i> </a>
+        <a href="https://github.com/pritambera2000"><i class="icon fab fa-github"></i></a>
+        <a href="https://gitlab.com/pritambera2000"><i class="icon fab fa-gitlab"></i></a>
+        <a href="https://twitter.com/dotslashpritam"><i class="icon fab fa-twitter"></i></a>
+        <a href="https://dev.to/pritambera2000"><i class="icon fab fa-dev"></i></a>
+      </div>
+  </footer>
+</body>
+
 </html>

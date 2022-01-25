@@ -1,0 +1,40 @@
+@import "./mixins";
+.footer {
+  &-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.7rem 1.5rem;
+    .copyright{
+        margin-bottom: 1rem;
+    }
+    i {
+      font-size: 1.5rem;
+    }
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        .copyright{
+        margin-bottom: 0;
+        }
+    }
+  }
+  &-icon {
+    @include icon;
+    a {
+      .icon {
+        padding: 0 0.5rem 0 0.5rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+// @media (min-width: 768px) {
+//   .footer {
+//     &-flex {
+//       display: flex;
+//       justify-content: space-between;
+//     }
+//   }
+// }
