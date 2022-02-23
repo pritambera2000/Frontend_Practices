@@ -28,7 +28,7 @@ Check Out Projects In Action Here
 
 [Landing-Page-Animation](https://sea-beaches-of-india.netlify.app)
 
-[Portfolio-2.0](pritams-minimal-portfolio.netlify.app)
+[Portfolio-2.0](https://pritams-minimal-portfolio.netlify.app)
 
 [Projeect Showcase Cards](https://projects-showcase-cards.netlify.app)
 
